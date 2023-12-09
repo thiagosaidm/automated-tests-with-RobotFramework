@@ -1,3 +1,11 @@
+
+*** Settings ***
+Documentation    Suite de Teste: Testa o site da Amazon.com.br
+Resource         amazon_resources.robot
+Test Setup       Abrir Navegador
+Test Teardown    Fecha Navegador
+
+
 *** Test Cases ***
 
 Caso de Teste - Acessar o menu "Eletrônicos"
