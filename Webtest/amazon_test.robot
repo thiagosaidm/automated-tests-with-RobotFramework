@@ -8,16 +8,16 @@ Test Teardown    Fechar Navegador
 
 *** Test Cases ***
 
-Caso de Teste - Acessar o menu "Celulares"
-    [Documentation]    Esse teste Verifica o menu celulares do site Magazine Luiza
-    ...                E verifica a categoria Celulares
+Caso de Teste - Acessar o menu Ofertas do dia
+    [Documentation]    Esse teste Verifica a categoria Ofertas do dia
+    ...                E verifica a categoria Ofertas do dia
     [Tags]             menus categorias
-    Acessar a home page do site Magazine Luiza
-    Entrar no menu celulares
-#    Verificar se o título da página fica "Eletrônicos e Tecnologia | Amazon.com.br"
-#    Verificar se aparece a frase "Eletrônicos e Tecnologia"
-#    Verificar se aparece a categoria "Computadores e Informática"
-#
+    Acessar a home page do site Amazon
+    Entrar no menu Ofertas do dia
+    Verificar se o título da página fica Ofertas e Promoções | Amazon.com.br
+
+
+
 #Caso de Teste 02 - Pesquisa de um produto
 #    [Documentation]    Esse teste verifica a busca de um produto
 #    [Tags]             busca_produtos  lista_busca
