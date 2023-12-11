@@ -18,11 +18,11 @@ Caso de Teste - Acessar o menu Ofertas do dia
 
 
 
-#Caso de Teste 02 - Pesquisa de um produto
-#    [Documentation]    Esse teste verifica a busca de um produto
-#    [Tags]             busca_produtos  lista_busca
-#    Acessar a home page do site Amazon.com.br
-#    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
-#    Clicar no botão de pesquisa
-#    Verificar o resultado da pesquisa, se listando o produto pesquisado (conferir um)
+Caso de Teste 02 - Pesquisa de um produto
+    [Documentation]    Esse teste verifica a busca de um produto
+    [Tags]             busca_produtos  lista_busca
+    Acessar a home page do site Amazon.com.br
+    Digitar o nome de produto "Playstation 5" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Verificar o resultado da pesquisa, se listando o produto pesquisado (conferir um)
 
