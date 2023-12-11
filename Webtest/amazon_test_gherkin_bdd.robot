@@ -12,19 +12,17 @@ Caso de Teste - Acessar o menu Ofertas do dia
     [Documentation]    Esse teste Verifica a categoria Ofertas do dia
     ...                E verifica a categoria Ofertas do dia
     [Tags]             menus categorias
-    Acessar a home page do site Amazon
-    Verificar se o título da página fica Amazon.com.br | Tudo pra você, de A a Z.
-    Entrar no menu Ofertas do dia
-    Verificar se o título da página fica Ofertas e Promoções | Amazon.com.br
-    Verificar se a o texto "Ofertas recomendadas para você" deve ser exibido na página
-
+    Dado que estou na home page da Amazon.com.br
+    Quando acessar o menu "Ofertas do dia"
+    Então o título da página deve ficar "Ofertas e Promoções | Amazon.com.br"
+    E o texto "Ofertas recomendadas para você" deve ser exibido na página
 
 
 Caso de Teste 02 - Pesquisa de um produto
     [Documentation]    Esse teste verifica a busca de um produto
     [Tags]             busca_produtos  lista_busca
-    Acessar a home page do site Amazon.com.br
-    Digitar o nome de produto "Playstation 5" no campo de pesquisa
-    Clicar no botão de pesquisa
-    Verificar o resultado da pesquisa, se listando o produto pesquisado (conferir um)
+    Dado que estou na home page da Amazon.com.br
+    Quando pesquisar pelo produto "Playstation 5"
+    Então o título da página deve ficar "Amazon.com.br : Playstation 5"
+    E um produto da linha "Playstation 5" deve ser mostrado na página
 
