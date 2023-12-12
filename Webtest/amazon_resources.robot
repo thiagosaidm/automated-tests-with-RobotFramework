@@ -63,6 +63,7 @@ Adicionar o produto "Playstation 5" no carrinho
     Click Element    locator=${ADD_CART}
 
 Verificar se o produto "Playstation 5" foi adicionado com sucesso
+    Wait Until Page Contains     Carrinho de compras da Amazon.com
     Title Should Be     Carrinho de compras da Amazon.com
     Element Should Be Visible           locator=${ADDED_VERIFICATION}
 
@@ -109,3 +110,23 @@ Então o título da página deve ficar "Amazon.com.br : Playstation 5"
 
 E um produto da linha "Playstation 5" deve ser mostrado na página
     Verificar o resultado da pesquisa se está listando o produto "Playstation 5"
+    
+Quando adicionar o produto "Playstation 5" no carrinho
+    Digitar o nome de produto "Playstation 5" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Adicionar o produto "Playstation 5" no carrinho
+    
+Então o produto "Playstation 5" deve ser mostrado no carrinho
+    Verificar se o produto "Playstation 5" foi adicionado com sucesso
+
+E existe o produto "Playstation 5" no carrinho
+    Digitar o nome de produto "Playstation 5" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Adicionar o produto "Playstation 5" no carrinho
+    Verificar se o produto "Playstation 5" foi adicionado com sucesso
+
+Quando remover o produto "Playstation 5" do carrinho
+    Remover o produto "Playstation 5" do carrinho
+
+Então o carrinho deve ficar vazio
+    Verificar se o carrinho fica vazio
